@@ -7,6 +7,10 @@ public class Car extends Vehicle {
         this.airConditioning = airConditioning;
     }
 
+    public void setAirConditioning(boolean airConditioning) {
+        this.airConditioning = airConditioning;
+    }
+
     public boolean isAirConditioning() {
         return airConditioning;
     }
@@ -18,6 +22,16 @@ public class Car extends Vehicle {
         } else {
             return getCombustion();
         }
+    }
+
+    @Override
+    public void setAC(boolean ac) {
+        this.airConditioning = ac;
+    }
+
+    @Override
+    public double vehicleRange() {
+        return getTankCapacity() / totalCombustionAt100Km() *100;
     }
 
     @Override

@@ -19,6 +19,11 @@ public class Truck extends Car {
     }
 
     @Override
+    public double vehicleRange() {
+        return getTankCapacity() / totalCombustionAt100Km() * 100;
+    }
+
+    @Override
     public void showInfo() {
         super.showInfo();
         System.out.println("Load weight: " + loadWeight + "kg");
