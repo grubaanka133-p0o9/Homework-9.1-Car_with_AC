@@ -17,10 +17,6 @@ public class Vehicle {
         return combustion;
     }
 
-    public double vehicleRange() {
-        return vehicleRange();
-    }
-
     public void showInfo() {
         System.out.println("Name: " + name + "\nTank capacity: " + tankCapacity + "L");
     }
